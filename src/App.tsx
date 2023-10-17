@@ -34,10 +34,10 @@ function App() {
     setGameStarted(true);
   };
   const handleEnd = () => {
+    setWpm(0);
     setGameStarted(false);
     setTyped("");
     setUserDone(false);
-    setWpm(0);
   };
   return (
     <div className=" w-screen h-screen flex flex-col gap-4 items-center justify-center">
